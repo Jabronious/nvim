@@ -41,7 +41,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'andymass/vim-matchup'
-Plug 'vim-sleuth'
+Plug 'tpope/vim-sleuth'
 Plug 'mhinz/vim-signify'
 
 Plug 'hashivim/vim-terraform'
