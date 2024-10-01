@@ -95,6 +95,11 @@ nmap <leader>f :ALEFix<CR>
 nnoremap <C-_> :Commentary<CR>
 vnoremap <C-_> :Commentary<CR>
 
+" Enable Tree-sitter-based folding
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+set foldlevelstart=99
+
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
     ensure_installed = { "go", "ruby", "lua", "python", "typescript", "javascript" },
