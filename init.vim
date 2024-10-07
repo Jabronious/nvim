@@ -1,5 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
+" Vim RSpec
+Plug 'thoughtbot/vim-rspec'
+
 " Google and Go-specific plugins
 Plug 'google/vim-codefmt'
 Plug 'google/vim-maktaba'
@@ -94,6 +97,12 @@ nmap <leader>f :ALEFix<CR>
 
 nnoremap <C-_> :Commentary<CR>
 vnoremap <C-_> :Commentary<CR>
+
+" RSpec Commands
+nnoremap <leader>rf :call RunCurrentSpecFile()<CR>
+nnoremap <leader>rl :call RunLastSpec()<CR>
+nnoremap <leader>rb :call RunNearestSpec()<CR>
+nnoremap <leader>ra :call RunAllSpecs()<CR>
 
 " Enable Tree-sitter-based folding
 set foldmethod=expr
