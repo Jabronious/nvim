@@ -17,6 +17,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
 
+" Copilot
+Plug 'github/copilot.vim'
+
 " Linting with ALE
 Plug 'dense-analysis/ale'
 
